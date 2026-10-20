@@ -1,0 +1,118 @@
+@font-face { font-family: "Corm"; font-weight: 500; src: url("file://%FONTS%/eb-garamond-latin-500-normal.woff"); }
+@font-face { font-family: "Corm"; font-weight: 600; src: url("file://%FONTS%/eb-garamond-latin-600-normal.woff"); }
+@font-face { font-family: "Corm"; font-weight: 700; src: url("file://%FONTS%/eb-garamond-latin-700-normal.woff"); }
+@font-face { font-family: "Corm"; font-weight: 500; font-style: italic; src: url("file://%FONTS%/eb-garamond-latin-500-italic.woff"); }
+
+:root { --gold: #b8975a; --ice: #9fb4c8; --bg: #0b0b0e; --panel: #121217; --line: #26262d; --txt: #cfcfd6; --hi: #f3f3f6; --mute: #7c7c88; }
+
+@page {
+  size: 148mm 210mm; margin: 17mm 15mm 19mm 15mm; background: #0b0b0e;
+  @bottom-left { content: "%RUN%"; font: 500 5.4pt "Inter"; letter-spacing: .18em; color: #5d5d68; }
+  @bottom-right { content: counter(page); font: 500 6.5pt "Inter"; color: #8a8a96; }
+}
+@page cover { margin: 0; @bottom-left { content: none; } @bottom-right { content: none; } }
+@page bare { @bottom-left { content: none; } @bottom-right { content: none; } }
+
+html { background: #0b0b0e; }
+body { font-family: "Inter"; font-size: 9.3pt; line-height: 1.56; color: var(--txt); hyphens: auto; }
+strong { color: var(--hi); font-weight: 600; }
+em { color: #e2e2e8; }
+p { margin: 0 0 2.6mm; orphans: 2; widows: 2; }
+
+/* capa */
+.cover { page: cover; height: 210mm; position: relative; text-align: center; break-after: page;
+  background: radial-gradient(ellipse at 50% 38%, #1a1914 0%, #0d0d10 55%, #070709 100%); }
+.cover .frame { position: absolute; left: 8mm; top: 8mm; width: 132mm; height: 194mm; border: .35pt solid rgba(184,151,90,.45); }
+.cover .psi { font-family: "Corm"; font-weight: 500; font-size: 80pt; color: var(--gold); padding-top: 34mm; line-height: 1; }
+.cover .t1 { font-family: "Corm"; font-weight: 600; font-size: 21pt; letter-spacing: .12em; color: var(--hi); margin-top: 14mm; }
+.cover .t2 { font-family: "Corm"; font-weight: 700; font-size: 21pt; letter-spacing: .12em; color: var(--gold); margin-top: 1mm; }
+.cover .csub { font-size: 7.6pt; letter-spacing: .06em; color: #9a9aa6; margin: 0 22mm; line-height: 1.6; }
+.cover .by { position: absolute; top: 183mm; left: 0; width: 148mm; font-size: 6.6pt; letter-spacing: .5em; color: #b9b9c3; }
+.cover .badge { position: absolute; top: 15mm; left: 0; width: 148mm; font-size: 6.4pt; font-weight: 600; letter-spacing: .4em; color: var(--gold); }
+.rule { width: 12mm; height: .9pt; background: var(--gold); margin: 4mm 0 6mm; }
+.rule.c { margin: 7mm auto; }
+
+/* índice */
+.toc { page: bare; break-after: page; }
+.toc h2 { font-family: "Corm"; font-weight: 600; font-size: 20pt; color: var(--hi); margin: 0 0 6mm; }
+.toc ul { list-style: none; padding: 0; margin: 0; }
+.toc li { font-size: 8pt; line-height: 1.35; margin: 0 0 1.25mm; }
+.toc li a { color: var(--txt); text-decoration: none; }
+.toc li a::after { content: leader(" ") target-counter(attr(href), page); color: var(--mute); }
+.toc li.tp { margin-top: 3.2mm; font-size: 6.6pt; font-weight: 600; letter-spacing: .2em; }
+.toc li.tp a { color: var(--gold); }
+.toc li.intro a, .toc li.end a { color: var(--hi); }
+
+/* partes */
+.partpage { page: bare; break-before: page; break-after: page; text-align: center; padding-top: 52mm; }
+.partpage .p-no { font-size: 7pt; font-weight: 600; letter-spacing: .5em; color: var(--gold); }
+.partpage .p-title { font-family: "Corm"; font-weight: 600; font-size: 30pt; color: var(--hi); margin: 5mm 0 0; line-height: 1.1; bookmark-level: 1; bookmark-label: attr(data-toc); }
+.partpage .p-sub { font-family: "Corm"; font-style: italic; font-weight: 500; font-size: 12pt; color: #b9b9c3; margin: 0 12mm; line-height: 1.4; }
+
+/* capítulos */
+.chapter { break-before: page; }
+.ch-head { margin: 1mm 0 5mm; }
+.ch-label { font-size: 6.4pt; font-weight: 600; letter-spacing: .45em; color: var(--gold); }
+.ch-no { font-variant-numeric: lining-nums; font-family: "Corm"; font-weight: 500; font-size: 40pt; line-height: 1; color: var(--gold); margin-top: 1.5mm; }
+.ch-title { font-family: "Corm"; font-weight: 600; font-size: 19pt; line-height: 1.15; color: var(--hi); margin: 2.5mm 0 0;
+  bookmark-level: 2; bookmark-label: attr(data-toc); }
+.chapter .ch-head + p, .hook { font-size: 10pt; color: #e4e4ea; }
+.hook { font-family: "Corm"; font-style: italic; font-weight: 500; font-size: 11.6pt; line-height: 1.45; color: #e8e8ee; }
+
+h3 { font-size: 7pt; font-weight: 700; letter-spacing: .16em; color: var(--ice); margin: 6mm 0 2.4mm; bookmark-level: none; break-after: avoid; }
+h3.gold { color: var(--gold); }
+.why { margin: 5mm 0 4mm; }
+.why h3 { margin-top: 0; }
+.why p { font-size: 9.6pt; color: #e2e2e8; }
+
+ul, ol { margin: 0 0 3mm; padding-left: 4.6mm; }
+li { margin: 0 0 1.5mm; }
+ul { list-style: none; }
+ul li::before { content: "—"; color: var(--gold); display: inline-block; width: 4.6mm; margin-left: -4.6mm; font-size: 8pt; }
+ol li::marker { color: var(--gold); font-weight: 600; font-size: 8.4pt; }
+
+blockquote { margin: 5mm 0; padding: 1mm 0 1mm 5mm; border-left: 1.2pt solid var(--gold);
+  font-family: "Corm"; font-style: italic; font-weight: 500; font-size: 12pt; line-height: 1.35; color: var(--hi); break-inside: avoid; }
+
+.label { font-size: 6.4pt; font-weight: 700; letter-spacing: .3em; color: var(--gold); margin-bottom: 2.2mm; }
+.case { background: var(--panel); border-left: 1.4pt solid var(--gold); padding: 4.2mm 5mm 2.2mm; margin: 4mm 0 5mm; font-size: 8.9pt; line-height: 1.55; color: #d9d9e0; }
+.use { border: .5pt solid #34343c; border-top: 1.4pt solid var(--gold); padding: 4mm 5mm 1.5mm; margin: 6mm 0 4mm; break-inside: avoid; }
+.use .row { display: flex; gap: 4mm; margin-bottom: 2.6mm; }
+.use .k { flex: 0 0 22mm; font-size: 6.2pt; font-weight: 700; letter-spacing: .14em; padding-top: .7mm; }
+.use .v { flex: 1; font-size: 8.9pt; }
+.ice { color: var(--ice); } .gold { color: var(--gold); }
+.train { background: #15151b; padding: 4.2mm 5mm 1.8mm; margin: 4mm 0 2mm; break-inside: avoid; border-radius: 1.2mm; }
+.train p { font-size: 8.9pt; color: #e0e0e6; }
+
+figure { margin: 4.5mm -2mm 5mm; break-inside: avoid; }
+figure img { width: 100%; display: block; border-radius: 1mm; }
+
+table { width: 100%; border-collapse: collapse; margin: 3mm 0 5mm; font-size: 8.4pt; break-inside: avoid; }
+th { text-align: left; font-size: 6.6pt; letter-spacing: .14em; color: var(--gold); font-weight: 700; padding: 1.6mm 2mm; border-bottom: .8pt solid var(--gold); }
+td { padding: 1.8mm 2mm; border-bottom: .4pt solid var(--line); vertical-align: top; }
+td:last-child, th:last-child { color: #e6e6ec; }
+
+/* checklist compacta */
+.checklist ol { font-size: 7.9pt; padding-left: 6mm; }
+.checklist li { margin-bottom: .55mm; line-height: 1.38; }
+.checklist h3 { margin-top: 4.5mm; }
+
+.sources { break-before: page; }
+.s-title { font-family: "Corm"; font-weight: 600; font-size: 19pt; color: var(--hi); margin: 0 0 4mm; bookmark-level: 2; bookmark-label: attr(data-toc); }
+.sources .lead { color: #b9b9c3; }
+.sources ul li { font-size: 7.6pt; line-height: 1.45; color: #b6b6c0; }
+.sources .disc { margin-top: 8mm; font-size: 6.8pt; color: #7c7c88; }
+.lead { color: #b9b9c3; font-style: italic; }
+
+/* amostra / venda */
+.cta { margin: 7mm 0 4mm; text-align: center; break-inside: avoid; }
+.cta .code { display: inline-block; border: .8pt dashed var(--gold); padding: 3mm 9mm; font-size: 17pt; font-weight: 700; letter-spacing: .3em; color: var(--hi); margin: 2mm 0 4mm; }
+.cta .btn { display: block; background: var(--gold); color: #0b0b0e; font-weight: 700; font-size: 9pt; letter-spacing: .04em; padding: 3.6mm 4mm; text-decoration: none; border-radius: 1mm; }
+.cta .small { font-size: 6.6pt; color: var(--mute); margin-top: 2mm; }
+.cut { margin: 5mm 0; padding: 5mm; background: linear-gradient(#0b0b0e, #16151a); border: .5pt solid #34343c; text-align: center; break-inside: avoid; }
+.cut .lock { font-size: 6.4pt; letter-spacing: .3em; font-weight: 700; color: var(--gold); }
+.cut p { font-family: "Corm"; font-style: italic; font-size: 13pt; color: var(--hi); margin: 2.5mm 0 4mm; }
+.ghost li { color: #4a4a54; }
+.ghost li strong { color: #55555f; }
+.benefits li { margin-bottom: 2mm; }
+.benefits li strong { color: var(--gold); }
