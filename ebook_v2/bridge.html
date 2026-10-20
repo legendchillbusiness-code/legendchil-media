@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><body>bridge<script>
+const BASE='https://raw.githubusercontent.com/legendchillbusiness-code/legendchil-media/posts/ebook_v2/';
+const T={png:'image/png',pdf:'application/pdf',zip:'application/zip'};
+window.addEventListener('message', async e=>{
+  if(!e.data||!e.data.want) return;
+  for(const n of e.data.want){
+    try{ const r=await fetch(BASE+encodeURIComponent(n)); const b=await r.arrayBuffer();
+      parent.postMessage({kind:'cfile',name:n,type:T[n.split('.').pop()]||'application/octet-stream',buf:b,status:r.status},'*',[b]);
+    }catch(err){ parent.postMessage({kind:'cerr',name:n,err:String(err)},'*'); }
+  }
+});
+parent.postMessage({kind:'bridge-ready'},'*');
+</script>
