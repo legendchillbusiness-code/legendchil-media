@@ -1,0 +1,23 @@
+- **Cap. 1** — Goffman, E. (1959). *The Presentation of Self in Everyday Life.* · DePaulo, B. et al. (1996). Lying in everyday life. *Journal of Personality and Social Psychology.* · Bond, C. & DePaulo, B. (2006). Accuracy of deception judgments. *Personality and Social Psychology Review.* · Mischel, W. & Shoda, Y. (1995). A cognitive-affective system theory of personality. *Psychological Review.* · Vrij, A. et al. (2008). Increasing cognitive load to facilitate lie detection. *Law and Human Behavior.* · DePaulo, B. et al. (2003). Cues to deception. *Psychological Bulletin.* · Carreyrou, J. (2018). *Bad Blood.*
+- **Cap. 2** — Ekman, P. (1985). *Telling Lies.* · DePaulo et al. (2003), ver Cap. 1.
+- **Cap. 3** — Carrère, S. & Gottman, J. (1999). Predicting divorce among newlyweds from the first three minutes of a marital conflict discussion. *Family Process.* · Ekman, P. & Friesen, W. (1971). Constants across cultures in the face and emotion. *JPSP.* · Ekman, P. & Friesen, W. (1986). A new pan-cultural facial expression of emotion. *Motivation and Emotion.* · Ekman, P., Davidson, R. & Friesen, W. (1990). The Duchenne smile. *JPSP.* · Porter, S. & ten Brinke, L. (2008). Reading between the lies. *Psychological Science.*
+- **Cap. 4** — Pfungst, O. (1907). *Clever Hans (The Horse of Mr. Von Osten).* · Ambady, N. & Rosenthal, R. (1993). Half a minute. *JPSP.* · Navarro, J. (2008). *What Every Body Is Saying.* · Chartrand, T. & Bargh, J. (1999). The chameleon effect. *JPSP.*
+- **Cap. 5** — Newman, M., Pennebaker, J., Berry, D. & Richards, J. (2003). Lying words. *Personality and Social Psychology Bulletin.*
+- **Cap. 6** — Hancock, J., Thom-Santelli, J. & Ritchie, T. (2004). Deception and design. *CHI 2004.*
+- **Cap. 7** — Asch, S. (1951). Effects of group pressure upon the modification and distortion of judgments. · Oveis, C. et al. (2016). Laughter conveys status. *Journal of Experimental Social Psychology.*
+- **Cap. 8** — Grayson, B. & Stein, M. (1981). Attracting assault. *Journal of Communication.* · Wheeler, S., Book, A. & Costello, K. (2009). Psychopathic traits and perceptions of victim vulnerability. *Criminal Justice and Behavior.*
+- **Cap. 9** — Paulhus, D. & Williams, K. (2002). The Dark Triad of personality. *Journal of Research in Personality.* · Babiak, P., Neumann, C. & Hare, R. (2010). Corporate psychopathy. *Behavioral Sciences and the Law.*
+- **Cap. 10** — Strutzenberg, C. et al. (2017). Love-bombing: a narcissistic approach to relationship formation. *Discovery.* · *The Tinder Swindler* (Netflix, 2022).
+- **Cap. 11** — Stark, E. (2007). *Coercive Control.*
+- **Cap. 12** — Hamilton, P. (1938). *Gas Light.* · Sweet, P. (2019). The sociology of gaslighting. *American Sociological Review.*
+- **Cap. 13** — Bowen, M. (1978). *Family Therapy in Clinical Practice.*
+- **Cap. 14** — Ferster, C. & Skinner, B. F. (1957). *Schedules of Reinforcement.* · Dutton, D. & Painter, S. (1981). Traumatic bonding. *Victimology.*
+- **Cap. 15** — Dailey, R. et al. (2009). On-again/off-again dating relationships. *Personal Relationships.*
+- **Cap. 16** — Cialdini, R. (1984). *Influence.* · Freedman, J. & Fraser, S. (1966). Compliance without pressure. *JPSP.* · Milgram, S. (1963). Behavioral study of obedience. *Journal of Abnormal and Social Psychology.* · Worchel, S., Lee, J. & Adewole, A. (1975). Effects of supply and demand on ratings of object value. *JPSP.*
+- **Cap. 17** — Consumer Financial Protection Bureau (2016), comunicado sobre a Wells Fargo.
+- **Cap. 18** — Forward, S. (1997). *Emotional Blackmail.*
+- **Cap. 19** — Gottman, J. & Silver, N. (1999). *The Seven Principles for Making Marriage Work.*
+- **Cap. 21** — Gollwitzer, P. & Sheeran, P. (2006). Implementation intentions and goal achievement. *Advances in Experimental Social Psychology.* · Smith, M. J. (1975). *When I Say No, I Feel Guilty.*
+- **Cap. 22** — Dunbar, R. (2010). *How Many Friends Does One Person Need?*
+- **Cap. 24** — Darley, J. & Latané, B. (1968). Bystander intervention in emergencies. *JPSP.*
+- **Cap. 25** — Ericsson, K. A., Krampe, R. & Tesch-Römer, C. (1993). The role of deliberate practice. *Psychological Review.*
