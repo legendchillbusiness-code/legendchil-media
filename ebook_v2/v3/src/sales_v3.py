@@ -10,10 +10,10 @@ X = {
         "Uma delas vai manipulá-la durante um ano.",
         "Nesta amostra conheces as três. Antes disso, aprendes o método para descobrires quem é."],
   inside_list=["**Capítulo 1 completo** — as três máscaras e a lacuna que as denuncia, com o caso real Theranos.",
-               "**Episódio 1 da história da Inês** — o primeiro de 25. A resposta só aparece no último capítulo.",
+               "**Episódio 1 da história da Inês** — o primeiro de 25. Cada episódio esconde pistas. A resposta está no fim do livro.",
                "**O que está no guia completo** — e um código só para quem leu até ao fim."],
   mid_title="Em quem confiarias?",
-  mid_text="Guarda a tua resposta. No guia completo, a história continua durante 25 episódios — um no fim de cada capítulo, cada um a testar o que acabaste de aprender. No Capítulo 26 está a resposta e todas as pistas, episódio a episódio. Vê se acertas.",
+  mid_text="Guarda a tua resposta. No guia completo, a história continua durante 25 episódios — um no fim de cada capítulo, cada um a testar o que acabaste de aprender. No fim do livro está a resposta, com todas as pistas episódio a episódio. Vê se acertas.",
   stats="26 capítulos · 25 casos reais · mais de 40 fontes · 10 ilustrações · 1 enigma · checklist de 50 sinais",
  ),
  "en": dict(
@@ -22,10 +22,10 @@ X = {
         "One of them will manipulate her for a year.",
         "In this preview you'll meet all three. First, you'll learn the method to work out who it is."],
   inside_list=["**All of Chapter 1** — the three masks and the gap that gives them away, with the real Theranos case.",
-               "**Episode 1 of Inês's story** — the first of 25. The answer only comes in the last chapter.",
+               "**Episode 1 of Inês's story** — the first of 25. Every episode hides clues. The answer is at the end of the book.",
                "**What's in the full guide** — plus a code only for people who read to the end."],
   mid_title="Who would you trust?",
-  mid_text="Keep your answer. In the full guide, the story runs for 25 episodes — one at the end of every chapter, each testing what you've just learned. Chapter 26 has the answer and every clue, episode by episode. See if you get it right.",
+  mid_text="Keep your answer. In the full guide, the story runs for 25 episodes — one at the end of every chapter, each testing what you've just learned. The end of the book has the answer, with every clue episode by episode. See if you get it right.",
   stats="26 chapters · 25 real cases · 40+ sources · 10 illustrations · 1 mystery · 50-sign checklist",
  )}
 

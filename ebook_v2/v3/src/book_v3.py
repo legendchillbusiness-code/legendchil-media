@@ -16,10 +16,10 @@ PARTS = {
 }
 WORDS = {"pt": dict(intro="Introdução", final="Palavras Finais", src="Fontes e Leituras",
                     src_intro="Os casos e conceitos deste guia vêm de investigação publicada, livros e reportagem documentada. A história da Inês é ficção. Para quem quiser ir mais fundo:",
-                    disc="Este guia é educativo. Não substitui aconselhamento psicológico, médico ou jurídico. Sinais comportamentais não provam intenções nem servem para diagnosticar ninguém.", part="PARTE"),
+                    disc="Este guia é educativo. Não substitui aconselhamento psicológico, médico ou jurídico. Sinais comportamentais não provam intenções nem servem para diagnosticar ninguém.", part="PARTE", enigma="O ENIGMA DA INÊS", ans="A Resposta"),
          "en": dict(intro="Introduction", final="Final Words", src="Sources and Further Reading",
                     src_intro="The cases and concepts in this guide come from published research, books and documented reporting. Inês's story is fiction. For anyone who wants to go deeper:",
-                    disc="This guide is educational. It does not replace psychological, medical or legal advice. Behavioural signs don't prove intentions and must not be used to diagnose anyone.", part="PART")}
+                    disc="This guide is educational. It does not replace psychological, medical or legal advice. Behavioural signs don't prove intentions and must not be used to diagnose anyone.", part="PART", enigma="INÊS'S MYSTERY", ans="The Answer")}
 
 def simple_section(lang, md, sid, label):
     head, _, body = md.strip().partition("\n")
@@ -44,13 +44,15 @@ def build(lang):
             title = md.split("\n", 1)[0].split("—", 1)[1].strip()
             parts.append(P.render_v3(lang, md, n))
             entries.append(("ch", f"{n} · {title}", f"ch{n}"))
-    fin = open(f"{d}/final.md").read()
-    parts.append(simple_section(lang, fin, "final", "").replace('<div class="ch-label"></div>', ""))
-    entries.append(("end", W["final"], "final"))
     src = B.render(B.md_blocks(open(f"{d}/fontes.md").read()))
     parts.append(f'<section class="sources" id="sources"><h1 class="s-title" data-toc="{W["src"]}">{W["src"]}</h1>'
                  f'<p class="lead">{W["src_intro"]}</p>{src}<p class="disc">{W["disc"]}</p></section>')
     entries.append(("end", W["src"], "sources"))
+    parts.append(simple_section(lang, open(f"{d}/resposta.md").read(), "answer", W["enigma"]))
+    entries.append(("end", W["ans"], "answer"))
+    fin = open(f"{d}/final.md").read()
+    parts.append(simple_section(lang, fin, "final", "").replace('<div class="ch-label"></div>', ""))
+    entries.append(("end", W["final"], "final"))
     body = B.cover(lang) + B.toc(lang, entries) + "".join(parts)
     page = B.page(lang, body, L["title1"] + " " + L["title2"]).replace("</style>", P.CSS_EXTRA + "\n.checklist ol{font-size:7.9pt}\n</style>")
     out = os.path.join(B.OUT, "v3_" + L["file_book"] + ".pdf")
