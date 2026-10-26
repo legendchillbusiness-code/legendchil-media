@@ -16,10 +16,10 @@ def wrap(d, words, font, maxw):
         else: lines.append(cur); cur = [w]
     return lines + [cur]
 
-def slide2(src_n, text, out):
+def slide2(src_n, text, out, header="DID YOU KNOW?"):
     photo = Image.open(f"{SRC}/en_{src_n}.jpg").convert("RGB").crop((12, 110, 1068, 710))
     im = Image.new("RGB", (W, H), Y); d = ImageDraw.Draw(im)
-    d.text((W/2, 56), "DID YOU KNOW?", font=PB(64), fill=K, anchor="mm")
+    d.text((W/2, 56), header, font=PB(64), fill=K, anchor="mm")
     im.paste(photo, (12, 110))
     d.rectangle((12, 710, W-12, H), fill=K)
     words = [(w.strip("*"), w.startswith("*")) for w in text.split()]
@@ -41,8 +41,18 @@ POSTS = [  # (photo from en_N, slide text)
  (5, "People who go quiet when you succeed were *competing* with you."),
  (6, "People who never ask for help don't *trust* anyone."),
 ]
+PT = [
+ "Quem concorda com tudo o que dizes está a *gerir-te.*",
+ "Quem fica calmo em todas as discussões já *ganhou* antes de começar.",
+ "Quem se lembra de cada detalhe que lhe contas está a *estudar-te.*",
+ "Quem te conta os segredos dos outros conta os *teus* aos outros.",
+ "Quem se cala quando tens sucesso estava a *competir* contigo.",
+ "Quem nunca pede ajuda não *confia* em ninguém.",
+]
 os.makedirs(OUT, exist_ok=True)
 for i, (n, t) in enumerate(POSTS, 1):
     slide2(n, t, f"pw_{i}.jpg")
+    slide2(n, PT[i-1], f"pw_pt_{i}.jpg", "SABIAS QUE?")
+Image.open(f"{SRC}/cover_pt.jpg").save(f"{OUT}/cover_pt.jpg", quality=95)
 Image.open(f"{SRC}/cover_en.jpg").save(f"{OUT}/cover_en.jpg", quality=95)
 print("ok")
