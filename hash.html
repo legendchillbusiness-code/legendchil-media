@@ -22,7 +22,7 @@ label{font-size:12px;color:#ecdd1e;letter-spacing:.1em}
 <label>CÓDIGO DE VENCEDOR (guardar para validar)</label><div class="o" id="w">—</div>
 <p id="warn"></p>
 <script>
-const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[^A-Z0-9]+/g,' ').trim().split(' ').filter(w=>w&&!['O','A','OS','AS'].includes(w)).join('');
 async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
 document.getElementById('i').addEventListener('input',async e=>{
   const a=norm(e.target.value);

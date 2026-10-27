@@ -97,7 +97,7 @@ const CFG={
 };
 document.getElementById('h').textContent=CFG.hash;
 if(CFG.form){document.getElementById('fl').href=CFG.form}else{const l=document.getElementById('fl');l.textContent='FORMULÁRIO EM BREVE';l.removeAttribute('href')}
-const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[^A-Z0-9]+/g,' ').trim().split(' ').filter(w=>w&&!['O','A','OS','AS'].includes(w)).join('');
 async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
 let turns=0,busy=false;
 function beep(ok){try{const c=new (window.AudioContext||window.webkitAudioContext)(),o=c.createOscillator(),g=c.createGain();o.type=ok?'triangle':'square';o.frequency.value=ok?660:110;g.gain.value=.08;o.connect(g);g.connect(c.destination);o.start();if(ok)o.frequency.linearRampToValueAtTime(990,c.currentTime+.4);g.gain.exponentialRampToValueAtTime(.0001,c.currentTime+(ok?.6:.25));o.stop(c.currentTime+.65)}catch(e){}}
