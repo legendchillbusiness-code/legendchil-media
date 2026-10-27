@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>O Rato — Legendchil</title>
+<meta name="description" content="Alguém da Família roubou 100€ ao Padrinho. O primeiro a abrir o cofre fica com eles.">
+<meta property="og:title" content="O RATO — Legendchil">
+<meta property="og:description" content="Alguém da Família roubou 100€ ao Padrinho. O primeiro a abrir o cofre fica com eles.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@500;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070a;--panel:#111116;--line:#26262e;--txt:#ececf0;--mut:#8a8a96;--acc:#d4202c;--bad:#ff3b4a;--ok:#2bff88}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:radial-gradient(ellipse at 50% 20%,#1c0b0d 0%,var(--bg) 65%);color:var(--txt);font-family:Poppins,system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;min-height:100%;padding:28px 16px 40px;overflow-x:hidden}
+.brand{font-weight:800;letter-spacing:.32em;font-size:12px;color:var(--mut)}
+.brand b{color:var(--acc)}
+h1{font-family:"Playfair Display",serif;font-size:clamp(56px,17vw,104px);font-weight:900;letter-spacing:.06em;line-height:1;margin-top:10px;text-align:center}
+.sub{color:var(--mut);margin-top:8px;text-align:center;font-size:15px}
+.prize{display:inline-block;margin-top:14px;padding:6px 14px;border:1px solid var(--acc);color:var(--acc);font-weight:700;letter-spacing:.12em;font-size:13px;border-radius:999px}
+.vault{position:relative;width:min(300px,78vw);aspect-ratio:1;margin:30px 0 26px}
+.vault svg{width:100%;height:100%;display:block}
+.dial{transform-origin:150px 150px;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.door{transform-origin:28px 150px;transition:transform 1.4s cubic-bezier(.6,0,.2,1) .9s}
+.open .door{transform:perspective(600px) rotateY(-82deg)}
+.shake{animation:sh .45s}
+@keyframes sh{0%,100%{transform:translateX(0)}20%{transform:translateX(-10px)}40%{transform:translateX(9px)}60%{transform:translateX(-6px)}80%{transform:translateX(4px)}}
+.led{transition:fill .3s}
+form{width:min(420px,100%);display:flex;flex-direction:column;gap:10px}
+input{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--txt);font-family:'JetBrains Mono',monospace;font-size:18px;letter-spacing:.12em;text-transform:uppercase;padding:16px;border-radius:10px;text-align:center;outline:none}
+input:focus{border-color:var(--acc)}
+button{background:var(--acc);color:#fff;border:0;font-family:Poppins,sans-serif;font-weight:800;font-size:16px;letter-spacing:.2em;padding:16px;border-radius:10px;cursor:pointer}
+button:disabled{opacity:.5;cursor:default}
+.msg{min-height:24px;text-align:center;font-size:14px;margin-top:4px;color:var(--mut)}
+.msg.bad{color:var(--bad)}
+.win{display:none;width:min(460px,100%);margin-top:18px;background:var(--panel);border:1px solid var(--ok);border-radius:14px;padding:22px;text-align:center}
+.win.show{display:block;animation:in .6s}
+@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.win h2{color:var(--ok);font-size:22px;letter-spacing:.08em}
+.code{font-family:'JetBrains Mono',monospace;font-size:34px;font-weight:700;color:var(--acc);letter-spacing:.18em;margin:14px 0}
+.win p{color:var(--mut);font-size:14px;line-height:1.5}
+.win a{display:inline-block;margin-top:14px;background:var(--ok);color:#04140a;font-weight:800;text-decoration:none;padding:13px 22px;border-radius:10px;letter-spacing:.08em}
+.rules{width:min(460px,100%);margin-top:34px;color:var(--mut);font-size:12.5px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px}
+.rules b{color:var(--txt)}
+.hash{font-family:'JetBrains Mono',monospace;word-break:break-all;font-size:11px;color:#6d6d78}
+</style>
+</head>
+<body>
+<div class="brand">LEGENDCHIL <b>·</b> UM ENIGMA DA FAMÍLIA</div>
+<h1>O RATO</h1>
+<p class="sub">Alguém da Família roubou-me. O primeiro a abrir o cofre, fica com eles.</p>
+<span class="prize">PRÉMIO · 100€</span>
+
+<div class="vault" id="vault">
+<svg viewBox="0 0 300 300" aria-hidden="true">
+  <rect x="10" y="10" width="280" height="280" rx="22" fill="#0c0c10" stroke="#2a2a33" stroke-width="2"/>
+  <text x="150" y="168" text-anchor="middle" font-family="Poppins,sans-serif" font-weight="800" font-size="54" fill="#2bff88">100€</text>
+  <g class="door" id="door">
+    <rect x="28" y="28" width="244" height="244" rx="16" fill="#16161c" stroke="#33333d" stroke-width="2"/>
+    <rect x="44" y="44" width="212" height="212" rx="12" fill="none" stroke="#24242c" stroke-width="2"/>
+    <rect x="248" y="122" width="10" height="56" rx="4" fill="#2f2f38"/>
+    <g class="dial" id="dial">
+      <circle cx="150" cy="150" r="62" fill="#0e0e12" stroke="#d4202c" stroke-width="3"/>
+      <circle cx="150" cy="150" r="48" fill="none" stroke="#2c2c35" stroke-width="2" stroke-dasharray="3 6"/>
+      <rect x="146" y="92" width="8" height="22" rx="3" fill="#d4202c"/>
+      <circle cx="150" cy="150" r="14" fill="#d4202c"/>
+    </g>
+    <circle class="led" id="led" cx="150" cy="232" r="6" fill="#ff3b4a"/>
+  </g>
+</svg>
+</div>
+
+<form id="f" autocomplete="off">
+  <input id="a" placeholder="A REGRA DO PADRINHO" maxlength="80" spellcheck="false" aria-label="Combinação">
+  <button id="b" type="submit">ABRIR</button>
+  <div class="msg" id="m">As pistas estão nos interrogatórios. Começa pelo Cap. 0.</div>
+</form>
+
+<div class="win" id="w">
+  <h2>COFRE ABERTO</h2>
+  <div class="code" id="c">—</div>
+  <p>Este é o teu código de vencedor. Submete-o já com a combinação e como chegaste lá. Ganha a <b style="color:#ececf0">primeira</b> submissão correta.</p>
+  <a id="fl" href="#" target="_blank" rel="noopener">SUBMETER AGORA</a>
+</div>
+
+<div class="rules">
+  <b>Regras.</b> Participação grátis, sem compra, subscrição nem presentes. Ganha a primeira submissão correta no formulário (conta a hora de registo), com a combinação, o código de vencedor e a explicação de cada pista. Combinações sem explicação são rejeitadas. Prémio de 100€ pago por MB WAY ou PayPal, em direto. Uma vitória por pessoa. Moderadores e pessoas próximas do Legendchil não participam. Concurso organizado por Legendchil, sem patrocínio nem ligação ao TikTok, Instagram, YouTube ou Twitch.<br><br>
+  <b>Prova de que a resposta não muda:</b> SHA-256 publicado no início:<br><span class="hash" id="h"></span>
+</div>
+
+<script>
+// CONFIG — só hashes, nunca a resposta.
+const CFG={
+  salt:"LGCOFRE1|",
+  hash:"5be33698f57517c6c0d4a41b04866226dc1c098de8ecec455e913843be27dc7b",
+  form:""
+};
+document.getElementById('h').textContent=CFG.hash;
+if(CFG.form){document.getElementById('fl').href=CFG.form}else{const l=document.getElementById('fl');l.textContent='FORMULÁRIO EM BREVE';l.removeAttribute('href')}
+const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+let turns=0,busy=false;
+function beep(ok){try{const c=new (window.AudioContext||window.webkitAudioContext)(),o=c.createOscillator(),g=c.createGain();o.type=ok?'triangle':'square';o.frequency.value=ok?660:110;g.gain.value=.08;o.connect(g);g.connect(c.destination);o.start();if(ok)o.frequency.linearRampToValueAtTime(990,c.currentTime+.4);g.gain.exponentialRampToValueAtTime(.0001,c.currentTime+(ok?.6:.25));o.stop(c.currentTime+.65)}catch(e){}}
+document.getElementById('f').addEventListener('submit',async e=>{
+  e.preventDefault(); if(busy) return;
+  const raw=document.getElementById('a').value, a=norm(raw), m=document.getElementById('m'), v=document.getElementById('vault');
+  if(!a){m.textContent='Escreve uma combinação.';m.className='msg bad';return}
+  busy=true; document.getElementById('b').disabled=true;
+  turns+=1; document.getElementById('dial').style.transform=`rotate(${turns*(540+Math.random()*180)}deg)`;
+  const h=await sha(CFG.salt+a);
+  setTimeout(async()=>{
+    if(h===CFG.hash){
+      document.getElementById('led').setAttribute('fill','#2bff88'); v.classList.add('open'); beep(true);
+      const w=(await sha('LGWIN|'+a)).slice(0,8).toUpperCase();
+      document.getElementById('c').textContent=w;
+      m.textContent=''; setTimeout(()=>{document.getElementById('w').classList.add('show');document.getElementById('w').scrollIntoView({behavior:'smooth'})},1600);
+    }else{
+      v.classList.remove('shake'); void v.offsetWidth; v.classList.add('shake'); beep(false);
+      m.textContent='Trancado. O rato agradece.'; m.className='msg bad';
+      busy=false; document.getElementById('b').disabled=false;
+    }
+  },1100);
+});
+</script>
+</body>
+</html>
