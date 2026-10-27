@@ -29,8 +29,8 @@ document.getElementById('i').addEventListener('input',async e=>{
   document.getElementById('n').textContent=a||'—';
   document.getElementById('h').textContent=a?await sha('LGCOFRE1|'+a):'—';
   document.getElementById('w').textContent=a?(await sha('LGWIN|'+a)).slice(0,8).toUpperCase():'—';
-  const ok=a.length>=12&&/[0-9]/.test(a)&&/[A-Z]/.test(a);
-  document.getElementById('warn').textContent=a?(ok?'✓ Forte o suficiente.':'⚠ Fraca: usa 12+ caracteres com letras e números.'):'';
+  const ok=a.length>=20;
+  document.getElementById('warn').textContent=a?(ok?'✓ Forte o suficiente.':'⚠ Curta demais: usa uma frase com 20+ letras.'):'';
 });
 </script>
 </body>
