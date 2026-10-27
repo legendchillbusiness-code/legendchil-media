@@ -1,0 +1,9 @@
+{"title":"EP1","scenes":[
+ {"img":"s1.jpg","say":"O Tiago achava que tinha a namorada perfeita. Estava enganado."},
+ {"img":"s2.jpg","say":"Ela nunca levantou a voz. Nunca precisou."},
+ {"img":"s3.jpg","say":"Quando ele chegava tarde, ela não discutia. Não fazia perguntas."},
+ {"img":"s4.jpg","say":"Simplesmente desaparecia. Um dia inteiro em silêncio. Às vezes dois."},
+ {"img":"s5.jpg","say":"E o Tiago começou a pedir desculpa, por coisas que nunca tinha feito."},
+ {"img":"s5.jpg","say":"Isto tem nome. Tratamento do silêncio. Não é falta de comunicação. É castigo.","freeze":["TÁTICA #1","O TRATAMENTO DO SILÊNCIO"]},
+ {"img":"s6.jpg","say":"Mas o silêncio era só o começo. Na semana seguinte, ela pegou no telemóvel dele."}
+],"end":["PARTE 2","AMANHÃ"]}
