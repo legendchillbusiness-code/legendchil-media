@@ -3,8 +3,8 @@ D='/tmp/claude-0/-home-claude/9be5d4db-9e4a-5a6b-b6fc-8a267e9a7a31/scratchpad/no
 ep=sys.argv[1]; os.makedirs(f'{D}/{ep}',exist_ok=True); os.chdir(f'{D}/{ep}')
 E=json.load(open('ep.json'))
 for i,s in enumerate(E['scenes']):
-    subprocess.run(['python3','-m','piper','-m',f'{D}/../tts/tugao.onnx','--length-scale','1.08','-f',f'raw{i}.wav'],input=s['say'].encode(),check=True,capture_output=True)
-    subprocess.run(['ffmpeg','-v','error','-y','-i',f'raw{i}.wav','-af','asetrate=22050*0.89,aresample=44100,atempo=1.06,bass=g=4,aecho=0.8:0.6:40:0.10','-ar','44100','-ac','1',f'n{i}.wav'],check=True)
+    subprocess.run(['python3','-m','piper','-m',f'{D}/../tts/tugao.onnx','--length-scale','0.98','-f',f'raw{i}.wav'],input=s['say'].encode(),check=True,capture_output=True)
+    subprocess.run(['ffmpeg','-v','error','-y','-i',f'raw{i}.wav','-af','asetrate=22050*0.89,aresample=44100,atempo=1.10,bass=g=4,aecho=0.8:0.6:40:0.10','-ar','44100','-ac','1',f'n{i}.wav'],check=True)
 from faster_whisper import WhisperModel
 m=WhisperModel('small',device='cpu',compute_type='int8'); out=[]
 for i,s in enumerate(E['scenes']):

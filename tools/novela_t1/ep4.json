@@ -1,9 +1,42 @@
-{"series":"O SILÊNCIO · EP.4","scenes":[
- {"img":"s6.jpg","say":"Tens de saber o que ela disse sobre ti. Foi esta a mensagem que o Tiago recebeu."},
- {"img":"man2.jpg","say":"Ela tinha dito aos amigos dele que ele era instável. Que tinha medo dele."},
- {"img":"s4.jpg","say":"Quando ele a confrontou, ela olhou-o nos olhos e disse. Eu nunca disse isso."},
- {"img":"her_down.jpg","say":"Estás a imaginar coisas. Estás outra vez a ficar paranoico."},
- {"img":"s5.jpg","say":"E pela primeira vez, o Tiago duvidou da própria memória."},
- {"img":"s5.jpg","say":"Isto chama-se gaslighting. Fazer-te duvidar do que viste, do que ouviste, e de quem és.","freeze":["TÁTICA #4","GASLIGHTING"]},
- {"img":"spot.jpg","say":"Mas desta vez, o Tiago tinha guardado uma prova."}
-],"end":["O FINAL","AMANHÃ"]}
+{
+ "series": "O SILÊNCIO · EP.4",
+ "scenes": [
+  {
+   "img": "s6.jpg",
+   "say": "Tens de saber o que ela disse sobre ti. Foi esta a mensagem que o Tiago recebeu."
+  },
+  {
+   "img": "man2.jpg",
+   "say": "Ela tinha dito aos amigos dele que ele era instável. Que tinha medo dele."
+  },
+  {
+   "img": "s4.jpg",
+   "say": "Quando ele a confrontou, ela olhou-o nos olhos e disse. Eu nunca disse isso."
+  },
+  {
+   "img": "her_down.jpg",
+   "say": "Estás a imaginar coisas. Estás outra vez a ficar paranoico."
+  },
+  {
+   "img": "s5.jpg",
+   "say": "E pela primeira vez, o Tiago duvidou da própria memória."
+  },
+  {
+   "img": "s5.jpg",
+   "say": "Isto chama-se gaslighting. Fazer-te duvidar do que viste, do que ouviste, e de quem és.",
+   "freeze": [
+    "TÁTICA #4",
+    "GASLIGHTING"
+   ]
+  },
+  {
+   "img": "spot.jpg",
+   "say": "Mas desta vez, o Tiago tinha guardado uma prova."
+  }
+ ],
+ "end": [
+  "O FINAL",
+  "AMANHÃ"
+ ],
+ "hook": "\"Eu nunca disse isso.\" Mas disse."
+}

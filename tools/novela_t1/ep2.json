@@ -1,8 +1,38 @@
-{"series":"O SILÊNCIO · EP.2","scenes":[
- {"img":"s6.jpg","say":"Ela pegou no telemóvel dele. Sem pedir. Sem esconder."},
- {"img":"s1.jpg","say":"Quando ele reagiu, ela sorriu. Se não tens nada a esconder, qual é o problema?"},
- {"img":"phone_man.jpg","say":"Na semana seguinte, pediu-lhe a localização. Só por segurança."},
- {"img":"s3.jpg","say":"E o Tiago aceitou. Afinal, ela só se preocupava com ele. Certo?"},
- {"img":"s3.jpg","say":"Errado. Isto é controlo disfarçado de cuidado. Quem te vigia não te protege. Prende-te.","freeze":["TÁTICA #2","O FALSO CUIDADO"]},
- {"img":"friends.jpg","say":"E quando ela já sabia onde ele estava a cada minuto, começou a escolher com quem ele estava."}
-],"end":["PARTE 3","AMANHÃ"]}
+{
+ "series": "O SILÊNCIO · EP.2",
+ "scenes": [
+  {
+   "img": "s6.jpg",
+   "say": "Ela pegou no telemóvel dele. Sem pedir. Sem esconder."
+  },
+  {
+   "img": "s1.jpg",
+   "say": "Quando ele reagiu, ela sorriu. Se não tens nada a esconder, qual é o problema?"
+  },
+  {
+   "img": "phone_man.jpg",
+   "say": "Na semana seguinte, pediu-lhe a localização. Só por segurança."
+  },
+  {
+   "img": "s3.jpg",
+   "say": "E o Tiago aceitou. Afinal, ela só se preocupava com ele. Certo?"
+  },
+  {
+   "img": "s3.jpg",
+   "say": "Errado. Isto é controlo disfarçado de cuidado. Quem te vigia não te protege. Prende-te.",
+   "freeze": [
+    "TÁTICA #2",
+    "O FALSO CUIDADO"
+   ]
+  },
+  {
+   "img": "friends.jpg",
+   "say": "E quando ela já sabia onde ele estava a cada minuto, começou a escolher com quem ele estava."
+  }
+ ],
+ "end": [
+  "PARTE 3",
+  "AMANHÃ"
+ ],
+ "hook": "Ela leu-lhe o telemóvel. E foi ele que pediu desculpa."
+}

@@ -84,6 +84,19 @@ for n in range(N):
             shadow_text(im,(W/2,560),fr[0],FT,RED if a>0 else RED)
             shadow_text(im,(W/2,700),fr[1],FS,WHITE)
         caption(im,WORDS[k],lt-lead)
+        if E.get('hook') and gt<2.0:
+            a=min(1,gt/0.12); sc=1.0+0.08*max(0,1-gt/0.25)
+            band=Image.new('L',(W,H),0); ImageDraw.Draw(band).rectangle((0,560,W,1060),fill=int(200*a)); band=band.filter(ImageFilter.GaussianBlur(50))
+            im=Image.composite(BLACK,im,band)
+            fh=PB(int(84*sc)); dd=ImageDraw.Draw(im)
+            lines=[];cur=''
+            for w in E['hook'].split():
+                tt=(cur+' '+w).strip()
+                if dd.textlength(tt,font=fh)<=960: cur=tt
+                else: lines.append(cur);cur=w
+            lines.append(cur); y=810-len(lines)*55
+            for i,ln in enumerate(lines):
+                shadow_text(im,(W/2,y+i*110),ln,fh,GOLD if i==len(lines)-1 else WHITE,stroke=3)
     else:
         lt=gt-t; im=kb(bigs[-1],1.0,0); im=ImageEnhance.Brightness(Image.composite(im,BLACK,VIG)).enhance(0.35)
         header(im)
@@ -107,6 +120,9 @@ for i,(st,lead,d) in enumerate(segs):
         tt=np.arange(int(1.1*SR))/SR; f=55*np.exp(-tt*1.5)+35
         boom=np.sin(2*np.pi*np.cumsum(f)/SR)*np.exp(-tt*3.2)*0.9+np.random.randn(len(tt)).astype(np.float32)*np.exp(-tt*18)*0.25
         A[a0:a0+len(boom)]+=boom.astype(np.float32)
+if E.get('hook'):
+    tt=np.arange(int(1.0*SR))/SR; f=60*np.exp(-tt*1.5)+38
+    A[:len(tt)]+=(np.sin(2*np.pi*np.cumsum(f)/SR)*np.exp(-tt*3.5)*0.8).astype(np.float32)
 # riser into end + hard cut
 r0=int((t-1.6)*SR); tt=np.arange(int(1.6*SR))/SR
 riser=(np.random.randn(len(tt))*0.18*(tt/1.6)**2+np.sin(2*np.pi*(200+600*(tt/1.6)**2)*tt)*0.08*(tt/1.6)).astype(np.float32)

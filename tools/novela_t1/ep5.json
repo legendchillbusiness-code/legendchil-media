@@ -1,10 +1,46 @@
-{"series":"O SILÊNCIO · EP.5 · FINAL","scenes":[
- {"img":"phone_man.jpg","say":"O Tiago mostrou-lhe a captura de ecrã. As palavras dela. Com data e hora."},
- {"img":"cry.jpg","say":"Ela não negou. Começou a chorar."},
- {"img":"shadow.jpg","say":"Como é que me podes fazer isto? Andas a espiar-me? Depois de tudo o que fiz por ti?"},
- {"img":"s3.jpg","say":"E durante um segundo, o Tiago quase pediu desculpa. Outra vez."},
- {"img":"s3.jpg","say":"Isto é inversão da culpa. Quando são apanhados, atacam. E a vítima passa a ser o culpado.","freeze":["TÁTICA #5","INVERSÃO DA CULPA"]},
- {"img":"walk.jpg","say":"Mas naquela noite, o Tiago viu o padrão. O silêncio. O controlo. O isolamento. As mentiras."},
- {"img":"spot.jpg","say":"Pegou no casaco e saiu. Sem dizer nada. Afinal, tinha sido ela a ensinar-lhe o poder do silêncio."},
- {"img":"sil.jpg","say":"Estas cinco táticas, e mais cinquenta, estão no meu livro. O primeiro capítulo é grátis. Link na bio."}
-],"end":["FIM","TEMPORADA 1"]}
+{
+ "series": "O SILÊNCIO · EP.5 · FINAL",
+ "scenes": [
+  {
+   "img": "phone_man.jpg",
+   "say": "O Tiago mostrou-lhe a captura de ecrã. As palavras dela. Com data e hora."
+  },
+  {
+   "img": "cry.jpg",
+   "say": "Ela não negou. Começou a chorar."
+  },
+  {
+   "img": "shadow.jpg",
+   "say": "Como é que me podes fazer isto? Andas a espiar-me? Depois de tudo o que fiz por ti?"
+  },
+  {
+   "img": "s3.jpg",
+   "say": "E durante um segundo, o Tiago quase pediu desculpa. Outra vez."
+  },
+  {
+   "img": "s3.jpg",
+   "say": "Isto é inversão da culpa. Quando são apanhados, atacam. E a vítima passa a ser o culpado.",
+   "freeze": [
+    "TÁTICA #5",
+    "INVERSÃO DA CULPA"
+   ]
+  },
+  {
+   "img": "walk.jpg",
+   "say": "Mas naquela noite, o Tiago viu o padrão. O silêncio. O controlo. O isolamento. As mentiras."
+  },
+  {
+   "img": "spot.jpg",
+   "say": "Pegou no casaco e saiu. Sem dizer nada. Afinal, tinha sido ela a ensinar-lhe o poder do silêncio."
+  },
+  {
+   "img": "sil.jpg",
+   "say": "Estas cinco táticas, e mais cinquenta, estão no meu livro. O primeiro capítulo é grátis. Link na bio."
+  }
+ ],
+ "end": [
+  "FIM",
+  "TEMPORADA 1"
+ ],
+ "hook": "Ele tinha a prova. Ela tinha as lágrimas."
+}

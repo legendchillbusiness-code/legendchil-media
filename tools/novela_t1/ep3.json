@@ -1,9 +1,42 @@
-{"series":"O SILÊNCIO · EP.3","scenes":[
- {"img":"friends.jpg","say":"O Tiago tinha os mesmos amigos há dez anos."},
- {"img":"s2.jpg","say":"Ela nunca os proibiu. Era mais inteligente do que isso."},
- {"img":"cafe.jpg","say":"Sempre que ele saía com eles, ela ficava triste. Fria. Distante."},
- {"img":"s4.jpg","say":"E sempre que ele ficava em casa, ela era perfeita."},
- {"img":"phone_man.jpg","say":"Em três meses, o Tiago deixou de responder às mensagens dos amigos."},
- {"img":"phone_man.jpg","say":"Isto é isolamento. Ninguém te tira os amigos à força. Fazem-te desistir deles sozinho.","freeze":["TÁTICA #3","O ISOLAMENTO"]},
- {"img":"s6.jpg","say":"Até que, numa noite, o melhor amigo mandou-lhe uma mensagem. Tens de saber o que ela disse sobre ti."}
-],"end":["PARTE 4","AMANHÃ"]}
+{
+ "series": "O SILÊNCIO · EP.3",
+ "scenes": [
+  {
+   "img": "friends.jpg",
+   "say": "O Tiago tinha os mesmos amigos há dez anos."
+  },
+  {
+   "img": "s2.jpg",
+   "say": "Ela nunca os proibiu. Era mais inteligente do que isso."
+  },
+  {
+   "img": "cafe.jpg",
+   "say": "Sempre que ele saía com eles, ela ficava triste. Fria. Distante."
+  },
+  {
+   "img": "s4.jpg",
+   "say": "E sempre que ele ficava em casa, ela era perfeita."
+  },
+  {
+   "img": "phone_man.jpg",
+   "say": "Em três meses, o Tiago deixou de responder às mensagens dos amigos."
+  },
+  {
+   "img": "phone_man.jpg",
+   "say": "Isto é isolamento. Ninguém te tira os amigos à força. Fazem-te desistir deles sozinho.",
+   "freeze": [
+    "TÁTICA #3",
+    "O ISOLAMENTO"
+   ]
+  },
+  {
+   "img": "s6.jpg",
+   "say": "Até que, numa noite, o melhor amigo mandou-lhe uma mensagem. Tens de saber o que ela disse sobre ti."
+  }
+ ],
+ "end": [
+  "PARTE 4",
+  "AMANHÃ"
+ ],
+ "hook": "Ela nunca o proibiu de ver os amigos. Fez pior."
+}
