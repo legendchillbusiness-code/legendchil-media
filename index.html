@@ -46,6 +46,13 @@ button:disabled{opacity:.5;cursor:default}
 .pre .frame{margin:0 auto;min-height:120px}
 .pre iframe{width:100%;height:100%;border:0;display:block}
 .pre a{display:inline-block;margin-top:12px;color:var(--txt);font-weight:700;font-size:13px;letter-spacing:.08em;text-decoration:underline}
+.pre .cover{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:space-between;width:min(300px,78vw);aspect-ratio:9/16;margin:0 auto;padding:34px 16px 30px;border:1px solid var(--line);border-radius:16px;text-decoration:none;color:var(--txt);background:radial-gradient(ellipse at 50% 38%,#3a0d12 0%,#12090b 55%,#07070a 100%);overflow:hidden}
+.pre .cover .c-top{font-family:"Playfair Display",serif;font-weight:900;font-size:40px;letter-spacing:.12em}
+.pre .cover .play{width:84px;height:84px;border-radius:50%;background:var(--acc);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 10px rgba(212,32,44,.22),0 0 40px rgba(212,32,44,.5);transition:transform .2s}
+.pre .cover:hover .play{transform:scale(1.08)}
+.pre .cover .play svg{width:38px;height:38px;margin-left:4px}
+.pre .cover .c-bot{font-weight:800;letter-spacing:.22em;font-size:14px;text-align:center}
+.pre .cover .c-bot small{display:block;margin-top:6px;color:var(--mut);font-weight:700;letter-spacing:.12em;font-size:10.5px}
 .rules{width:min(460px,100%);margin-top:34px;color:var(--mut);font-size:12.5px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px}
 .rules b{color:var(--txt)}
 .hash{font-family:'JetBrains Mono',monospace;word-break:break-all;font-size:11px;color:#6d6d78}
@@ -85,7 +92,11 @@ button:disabled{opacity:.5;cursor:default}
 <section class="pre" id="cap0">
   <span class="tag">CAPÍTULO 0 · PREVIEW</span>
   <p>Começa aqui. A primeira pista está neste vídeo.</p>
-  <div class="frame"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@legendchil.lives/video/7701803582252764438" data-video-id="7701803582252764438" style="max-width:605px;min-width:325px;margin:0 auto"><section></section></blockquote><script async src="https://www.tiktok.com/embed.js"></script></div>
+  <a class="cover" href="https://www.tiktok.com/@legendchil.lives/video/7701803582252764438" target="_blank" rel="noopener" aria-label="Ver o Capítulo 0 no TikTok">
+    <span class="c-top">O RATO</span>
+    <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#fff"/></svg></span>
+    <span class="c-bot">CAPÍTULO 0<small>TOCA PARA VER NO TIKTOK</small></span>
+  </a>
   <a href="https://www.tiktok.com/@legendchil.lives/video/7701803582252764438" target="_blank" rel="noopener">VER NO TIKTOK ↗</a>
 </section>
 
