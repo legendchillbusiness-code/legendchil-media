@@ -14,6 +14,11 @@
 body{background:radial-gradient(ellipse at 50% 0%,#1c0b0d 0%,var(--bg) 60%);color:var(--txt);font-family:Poppins,system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:36px 16px 48px}
 .wrap{width:min(440px,100%)}
 header{text-align:center;margin-bottom:26px}
+.av{width:132px;height:132px;border-radius:50%;display:block;margin:0 auto 14px;border:3px solid var(--acc);box-shadow:0 0 28px rgba(212,32,44,.55)}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
+.chips a{text-decoration:none;color:var(--txt);font-size:12.5px;font-weight:600;border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:7px 13px}
+.chips a:hover{border-color:var(--acc)}
+.live{color:var(--acc);font-weight:800;font-size:11px;letter-spacing:.14em}
 .brand{font-family:"Playfair Display",serif;font-weight:900;font-size:40px;letter-spacing:.08em}
 .tag{color:var(--mut);font-size:14px;margin-top:6px}
 h2{font-size:12px;letter-spacing:.3em;color:var(--mut);font-weight:800;margin:26px 4px 10px}
@@ -34,13 +39,15 @@ h2{font-size:12px;letter-spacing:.3em;color:var(--mut);font-weight:800;margin:26
 <body>
 <div class="wrap">
 <header>
+  <img class="av" src="avatar.jpg" alt="Legendchil" width="132" height="132">
   <div class="brand">LEGENDCHIL</div>
   <p class="tag">Lives, clips, enigma e psicologia · Portugal 🇵🇹</p>
+<div class="chips"><a href="https://www.twitch.tv/legendchil">Twitch</a><a href="https://www.tiktok.com/@legendchil.lives">TikTok</a><a href="https://www.youtube.com/@LegendchilGaming">YouTube</a><a href="https://www.instagram.com/clipesdolegendchil/">Instagram</a></div>
 </header>
 
 <h2>🎮 GAMING</h2>
 <a class="btn hero" href="https://legendchillbusiness-code.github.io/legendchil-media/"><span class="ic">🐀</span><span class="tx"><b>O RATO · Enigma</b><span class="pz">PRÉMIO 100€ · COMEÇA PELO CAP. 0</span></span><span class="ar">›</span></a>
-<a class="btn" href="https://www.twitch.tv/legendchil"><span class="ic">🔴</span><span class="tx"><b>Twitch</b><span>Lives de GTA RP e CS</span></span><span class="ar">›</span></a>
+<a class="btn" href="https://www.twitch.tv/legendchil"><span class="ic">🔴</span><span class="tx"><b>Twitch <span class="live" style="display:inline">● LIVES</span></b><span>GTA RP e CS em direto</span></span><span class="ar">›</span></a>
 <a class="btn" href="https://www.tiktok.com/@legendchil.lives"><span class="ic">🎵</span><span class="tx"><b>TikTok · Gaming</b><span>@legendchil.lives</span></span><span class="ar">›</span></a>
 <a class="btn" href="https://www.youtube.com/@LegendchilGaming"><span class="ic">▶️</span><span class="tx"><b>YouTube · Gaming</b><span>Clips e capítulos do Enigma</span></span><span class="ar">›</span></a>
 <a class="btn" href="https://www.instagram.com/clipesdolegendchil/"><span class="ic">📸</span><span class="tx"><b>Instagram · Clips</b><span>@clipesdolegendchil</span></span><span class="ar">›</span></a>
