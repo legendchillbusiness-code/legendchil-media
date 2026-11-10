@@ -5,3 +5,4 @@ Montar: S/ill <- images/ill_wk46; S/posts/build.py <- tiktok_build.py; S/ytw/too
 - Short de lista: python3 yt_list2.py '<json spec>' out.mp4  (ver spec nos exemplos do historico: title, intro, intro_text, c0, items [[serie,i],...])
 - Voz: ElevenLabs Mark (voice_id u27PQ4R4svuZXlMb7yfu), eleven_v4, 1 geracao; pos: silenceremove, atempo=1.2, loudnorm I=-14
 - Carrosseis TikTok: tiktok_build.py (3 slides, cores verde/vermelho/ambar/azul)
+- Vozes ja processadas em vo/*.mp3 (converter para wav antes de usar: ffmpeg -i x.mp3 x.wav)
