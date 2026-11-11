@@ -100,3 +100,26 @@ Padrões:
 - Promessas falsas ou perigosas ("Illegal", "fazer alguém apaixonar-se"): risco de desmonetização e de reportes.
 - Termos sinalizados no TikTok: narcissist, toxic, manipulation, gaslight.
 - Frases exatas, estrutura de vídeo igual ou clips deles. Só os padrões.
+
+
+## Teste de ganchos (10 Nov 13:47)
+- O Rui aprovou ("sim para os 12"). 12 Shorts re-renderizados com ganchos novos e substituídos no Metricool (mesmos horários, títulos, descrições). Ficheiros: repo videos/youtube_en/wk46h/. Ganchos e folha dos 3 canais: claude/Ganchos_wk46.md.
+- Ângulos por slot: A direto, B segredo, C perda. A: list1 (10 Nov 16:00), list3 (11 Nov 16:00), list4 (12 Nov 16:00), list2 (13 Nov 16:00). B: girls3, facts2, girls2, facts7. C: facts5, girls1, facts3, girls7.
+- Medir às 72 h por ângulo: views, duração média de visualização, % que desliza para fora. Amostra pequena (4 por ângulo): direção, não prova. Os 2 loops de 9 Nov ficam de fora.
+- TikTok: os posts de 10 Nov 08:30 e 13:30 constam como PUBLISHED no Metricool.
+- Ids Metricool mudam a cada update; uuid estável (ver getScheduledPosts).
+
+### Ganchos finais gravados (voz + ecrã)
+Alguns foram encurtados para caber em 3 linhas no ecrã.
+1. list1: "She likes you. You're missing all three signs."
+2. girls3: "Her eyes lie. Her feet don't."
+3. facts5: "No mirroring? You haven't connected yet."
+4. list3: "You can make anyone like you. Three steps."
+5. facts2: "Nobody judges you by what you meant."
+6. girls1: "She watches you. Most guys miss it."
+7. list4: "You're misreading these four signs. Every time."
+8. girls2: "Small talk is not what it looks like."
+9. facts3: "Your first ten seconds decide the rest."
+10. list2: "This is how people really see you. Four facts."
+11. facts7: "They remember two moments of you."
+12. girls7: "She laughs, then repeats it. Now you know."
