@@ -52,9 +52,27 @@ h2{font-family:"Playfair Display",serif;font-size:23px;line-height:1.2;margin-bo
 .free:hover{color:var(--txt)}
 footer{margin-top:40px;text-align:center;font-size:12px;color:var(--mut)}
 footer a{color:var(--mut)}
+.side{display:none}
+@media(min-width:1100px){
+  .depo-inline{display:none}
+  .side{display:block;position:fixed;top:50%;transform:translateY(-50%);width:min(250px,calc((100vw - 480px)/2 - 48px));background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:16px;padding:18px 18px 16px;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+  .side.l{left:max(24px,calc(50% - 240px - 24px - 250px))}
+  .side.r{right:max(24px,calc(50% - 240px - 24px - 250px))}
+  .side p{font-family:"Playfair Display",serif;font-size:16.5px;line-height:1.45;color:#e9e9ef}
+  .side small{display:block;margin-top:12px;font-size:12px;font-weight:600;color:var(--gold)}
+  .side small i{display:block;font-style:normal;font-weight:500;color:var(--mut);margin-top:1px}
+}
 </style>
 </head>
 <body>
+<aside class="side l" aria-label="Opinião de um leitor">
+  <p>"Achei bem fixe a temática: os sinais são quase como um tutorial no YouTube e, apesar de serem sinais óbvios, aparecem em quase toda a gente."</p>
+  <small>Rodrigo F.<i>leitor da amostra grátis</i></small>
+</aside>
+<aside class="side r" aria-label="Opinião de um leitor">
+  <p>"Achei fascinante o facto de conseguires ver isso e escreveres um livro sobre isso."</p>
+  <small>Rodrigo F.<i>leitor da amostra grátis</i></small>
+</aside>
 <main class="wrap">
 
 <div class="top">
@@ -94,7 +112,7 @@ footer a{color:var(--mut)}
   <div class="card"><span class="n">PARTE IV · DEFESA</span><b>O que dizer e fazer</b><p>Frases prontas para cada tática, limites que não se negoceiam e uma checklist com 50 sinais numa página.</p></div>
 </section>
 
-<section>
+<section class="depo-inline">
   <h2>O que diz quem leu a amostra grátis</h2>
   <p class="quote">Achei bem fixe o facto de colocares vários detalhes sobre as pessoas neste curto excerto do livro. Achei bem fixe a temática: os sinais são quase como um tutorial no YouTube e, apesar de serem sinais óbvios, aparecem em quase toda a gente. Por isso achei fascinante o facto de conseguires ver isso e escreveres um livro sobre isso.</p>
   <p class="alt-t" style="text-align:left;margin-top:10px">Rodrigo F. · leitor da amostra grátis</p>
