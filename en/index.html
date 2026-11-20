@@ -3,87 +3,162 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Read People Before They Speak — Legendchil</title>
+<title>Read Anyone Instantly — Legendchil</title>
 <link rel="icon" href="/favicon.ico?v=2" sizes="any">
 <link rel="apple-touch-icon" href="/avatar.jpg">
-<meta name="description" content="Read Anyone Instantly: the book on body language and hidden intent. Free chapter inside.">
-<meta property="og:title" content="Read People Before They Speak — Legendchil">
-<meta property="og:description" content="Read Anyone Instantly: the book on body language and hidden intent. Free chapter inside.">
-<meta property="og:image" content="https://legendchil.com/avatar.jpg">
-<link rel="alternate" hreflang="pt" href="https://legendchil.com/"><link rel="alternate" hreflang="en" href="https://legendchil.com/en/">
+<meta name="description" content="Read Anyone Instantly: micro-signals, body language and the tactics manipulators use, explained plainly. 26 chapters, 25 real cases, bonus 15 red flags. First chapter free.">
+<meta property="og:title" content="Read Anyone Instantly — Legendchil">
+<meta property="og:description" content="Read people before they read you. 26 chapters · 25 real cases · bonus: 15 red flags.">
+<meta property="og:image" content="https://legendchil.com/en/cover.jpg">
+<link rel="canonical" href="https://legendchil.com/en/">
+<link rel="alternate" hreflang="pt" href="https://legendchil.com/livro/"><link rel="alternate" hreflang="en" href="https://legendchil.com/en/">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@500;600;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07070a;--panel:#111116;--line:#26262e;--txt:#ececf0;--mut:#8a8a96;--acc:#d4202c;--gold:#d9b25f}
+:root{--bg:#07070a;--panel:#111116;--line:#26262e;--txt:#ececf0;--mut:#9a9aa6;--body:#c4c4ce;--gold:#d9b25f}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:radial-gradient(ellipse at 50% 0%,#2a0d11 0%,var(--bg) 62%) no-repeat;color:var(--txt);font-family:Poppins,system-ui,sans-serif;min-height:100vh;display:flex;justify-content:center;padding:40px 16px 56px}
-.wrap{width:min(460px,100%)}
-header{text-align:center;margin-bottom:20px}
-.av{width:140px;height:140px;border-radius:50%;display:block;margin:0 auto 14px;border:3px solid var(--acc);box-shadow:0 0 34px rgba(212,32,44,.6);animation:pulse 3s ease-in-out infinite}
-@keyframes pulse{50%{box-shadow:0 0 52px rgba(212,32,44,.9)}}
-.brand{font-family:"Playfair Display",serif;font-weight:900;font-size:38px;letter-spacing:.08em}
-.tag{color:var(--mut);font-size:14px;margin-top:8px;line-height:1.5}
-.hook{font-family:"Playfair Display",serif;font-weight:900;font-size:31px;line-height:1.15;margin-top:16px;letter-spacing:-.01em}
-.hook em{font-style:normal;color:var(--acc)}
-.tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:5px;margin:0 0 20px}
-.tabs button{font:inherit;font-weight:800;font-size:13px;letter-spacing:.12em;color:var(--mut);background:none;border:0;border-radius:999px;padding:11px 0;cursor:pointer;transition:.15s}
-.tabs button[aria-selected=true]{background:var(--acc);color:#fff;box-shadow:0 4px 16px rgba(212,32,44,.4)}
-section[hidden]{display:none}
-h2{font-size:12px;letter-spacing:.3em;color:var(--mut);font-weight:800;margin:22px 4px 10px}
-.card{display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--txt);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:12px 14px 12px 12px;margin-bottom:12px;transition:transform .15s,border-color .15s,box-shadow .15s}
-a.card:hover,a.card:focus-visible{transform:translateY(-2px);border-color:var(--acc);box-shadow:0 6px 22px rgba(212,32,44,.22);outline:0}
-.ci{width:60px;height:60px;border-radius:16px;display:grid;place-items:center;flex:none;color:#fff}
-.ci svg{width:30px;height:30px}
-.twitch{background:#9146ff}.tiktok{background:#000;box-shadow:inset 0 0 0 1px #2c2c34}.tiktok svg{filter:drop-shadow(2px 2px 0 #fe2c55) drop-shadow(-2px -2px 0 #25f4ee)}
-.youtube{background:#f00}.instagram{background:linear-gradient(45deg,#feda75,#fa7e1e 25%,#d62976 55%,#962fbf 78%,#4f5bd5)}
-.discord{background:#5865f2}.facebook{background:#1877f2}
-.rato{background:linear-gradient(135deg,#d4202c,#6d0f17)}.pad{background:#1f2a44}.heart{background:linear-gradient(135deg,#ff4d6d,#b3123a)}
-.mb{background:#fff;color:#e30613;font-weight:800;font-size:17px;letter-spacing:-.02em}
-.gift{background:#243a2c}.bk{background:#2a2210;color:var(--gold)}
-.tx{flex:1;min-width:0}
-.tx b{display:block;font-weight:800;font-size:16px;line-height:1.25}
-.tx span{display:block;color:var(--mut);font-size:12.5px;margin-top:3px}
-.pill{flex:none;font-size:12px;font-weight:800;padding:8px 14px;border-radius:999px;background:#1d1d25;border:1px solid var(--line)}
-.hero{border-color:var(--acc);background:linear-gradient(135deg,#25090d,#111116)}
-.hero .pill{background:var(--acc);border-color:var(--acc);color:#fff}
-.hero .tx span{color:#ff6b75;font-weight:800;letter-spacing:.06em;font-size:11.5px}
-.live{display:inline!important;color:var(--acc)!important;font-weight:800;font-size:11px!important;letter-spacing:.14em;margin:0 0 0 8px!important}
-.live::before{content:"●";margin-right:4px}
-.book{display:block;border-color:#5a4a22;background:linear-gradient(135deg,#1b160a,#111116)}
-.bk-top{display:flex;align-items:center;gap:16px}
-.fmts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
-.fmts a{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:var(--txt);font-size:12px;font-weight:800;background:#0f0f14;border:1px solid #3a2f14;border-radius:12px;padding:10px 4px;transition:.15s}
-.fmts a svg{width:22px;height:22px;color:var(--gold)}
-.fmts a:hover{border-color:var(--gold);transform:translateY(-2px)}
-.note{color:var(--mut);font-size:11.5px;text-align:center;margin-top:26px;line-height:1.5}
-@media(prefers-reduced-motion:reduce){.av{animation:none}}
-.langs{display:flex;justify-content:flex-end;gap:6px;margin:-14px 0 8px}.lang{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--mut);text-decoration:none;padding:6px 10px;border-radius:999px;border:1px solid var(--line)}a.lang:hover{border-color:var(--acc);color:var(--txt)}.lang.on{background:var(--acc);border-color:var(--acc);color:#fff}
-.legal{color:#5f5f6b;font-size:10px;text-align:center;margin-top:10px;line-height:1.5}
+body{background:var(--bg) radial-gradient(ellipse at 50% 0%,#241b08 0%,var(--bg) 60%) no-repeat;color:var(--txt);font-family:Poppins,system-ui,sans-serif;min-height:100vh;display:flex;justify-content:center;padding:20px 16px 48px;line-height:1.55}
+.wrap{width:min(480px,100%)}
+.langs{display:flex;justify-content:flex-end;gap:6px;margin-bottom:14px}
+.lang{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--mut);text-decoration:none;padding:6px 12px;border-radius:999px;border:1px solid var(--line)}
+a.lang:hover,a.lang:focus-visible{border-color:var(--gold);color:var(--txt);outline:0}
+.lang.on{background:var(--gold);border-color:var(--gold);color:#14100a}
+.top{text-align:center}
+.capa{width:170px;max-width:50%;height:auto;display:block;margin:0 auto 22px;border-radius:2px 6px 6px 2px;border-left:3px solid #1c1c22;box-shadow:0 18px 40px rgba(0,0,0,.75),0 4px 10px rgba(0,0,0,.6)}
+.kick{font-size:12px;font-weight:800;letter-spacing:.18em;color:var(--gold);text-transform:uppercase}
+h1{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(30px,8.5vw,38px);line-height:1.12;margin:8px 0 12px}
+h1 span{color:var(--gold)}
+.sub{color:var(--body);font-size:15px;margin:0 auto 22px;max-width:400px}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:24px}
+.chips span{font-size:12px;font-weight:600;padding:6px 11px;border-radius:999px;border:1px solid #3a2f14;background:#14110a;color:#e9d6a6}
+.buy{display:block;text-decoration:none;background:linear-gradient(135deg,#e2b65a,#b8892f);color:#14100a;border-radius:16px;padding:16px 18px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,.55);transition:transform .15s,box-shadow .15s}
+.buy:hover,.buy:focus-visible{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.65);outline:0}
+.buy b{display:block;font-size:18px;font-weight:800}
+.buy small{display:block;font-size:13px;font-weight:600;margin-top:2px}
+.inc{list-style:none;margin:12px 0 0;font-size:13.5px;color:var(--body);display:grid;gap:4px;text-align:left;padding:0 6px}
+.inc li::before{content:"✓ ";color:var(--gold);font-weight:800}
+.freebox{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--txt);background:var(--panel);border:1px solid #3a2f14;border-radius:16px;padding:14px 16px;margin-top:16px;text-align:left;transition:border-color .15s,transform .15s}
+.freebox:hover,.freebox:focus-visible{border-color:var(--gold);transform:translateY(-2px);outline:0}
+.freebox svg{width:28px;height:28px;color:var(--gold);flex:none}
+.freebox b{display:block;font-size:15px;color:var(--txt)}
+.freebox span span{display:block;font-size:13px;color:var(--mut)}
+.alt-t{font-size:13px;color:var(--mut);text-align:center;margin-top:18px}
+.alt{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.alt a{display:block;text-align:center;text-decoration:none;color:var(--txt);font-size:14px;font-weight:600;border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:10px 6px;transition:.15s}
+.alt a:hover,.alt a:focus-visible{border-color:var(--mut);outline:0}
+.alt a small{display:block;color:var(--mut);font-size:12px;font-weight:500}
+section{margin-top:38px}
+h2{font-family:"Playfair Display",serif;font-size:24px;line-height:1.2;margin-bottom:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin-bottom:10px}
+.card b{display:block;font-size:15px;margin-bottom:2px}
+.card p{font-size:14px;color:var(--body)}
+.card .n{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--gold)}
+.quote{font-family:"Playfair Display",serif;font-size:19px;line-height:1.4;border-left:3px solid var(--gold);padding:4px 0 4px 16px;color:#e9e9ef}
+.who{font-size:13px;color:var(--mut);margin-top:10px}
+.autor{display:flex;gap:14px;align-items:center}
+.autor img{width:64px;height:64px;border-radius:50%;border:2px solid var(--gold);flex:none}
+.autor p{font-size:14px;color:var(--body)}
+.autor b{color:var(--txt);display:block}
+.fim{text-align:center;margin-top:40px}
+.fim .buy{margin-top:14px}
+.free{display:inline-block;margin-top:14px;font-size:14px;color:var(--mut);text-decoration:underline;text-underline-offset:3px}
+.free:hover,.free:focus-visible{color:var(--txt)}
+footer{margin-top:40px;text-align:center;font-size:12px;color:var(--mut);line-height:1.6}
+footer p+p{margin-top:6px}
+.side{display:none}
+@media(min-width:1100px){
+  .depo-inline{display:none}
+  .side{display:block;position:fixed;top:50%;transform:translateY(-50%);width:min(250px,calc((100vw - 480px)/2 - 48px));background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+  .side.l{left:max(24px,calc(50% - 240px - 24px - 250px))}
+  .side.r{right:max(24px,calc(50% - 240px - 24px - 250px))}
+  .side p{font-family:"Playfair Display",serif;font-size:16.5px;line-height:1.45;color:#e9e9ef}
+  .side small{display:block;margin-top:12px;font-size:12px;font-weight:600;color:var(--gold)}
+  .side small i{display:block;font-style:normal;font-weight:500;color:var(--mut);margin-top:1px}
+}
+@media(prefers-reduced-motion:reduce){.buy,.freebox,.alt a{transition:none}.buy:hover,.freebox:hover{transform:none}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<div class="langs"><a class="lang" href="/">PT</a><span class="lang on">EN</span></div>
-<header>
-  <img class="av" src="../avatar.jpg" alt="Legendchil" width="140" height="140">
-  <div class="brand">LEGENDCHIL</div>
-  <h1 class="hook">Read People <em>Before They Speak.</em></h1>
-  <p class="tag">Body language. Hidden intent. The tells most people miss.</p>
-</header>
+<aside class="side l" aria-label="Reader review">
+  <p>"The signs are almost like a YouTube tutorial. They seem obvious, yet you see them in almost everyone."</p>
+  <small>Rodrigo F.<i>free chapter reader · translated from Portuguese</i></small>
+</aside>
+<aside class="side r" aria-label="Reader review">
+  <p>"I found it fascinating that you can see all of this and wrote a book about it."</p>
+  <small>Rodrigo F.<i>free chapter reader · translated from Portuguese</i></small>
+</aside>
+<main class="wrap">
+<nav class="langs" aria-label="Language"><a class="lang" href="/livro/" hreflang="pt">PT</a><span class="lang on">EN</span></nav>
 
-<section id="psico" role="tabpanel">
-<a class="card " href="https://legendchil.gumroad.com/l/free-preview"><span class="ci gift"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4"/><path d="M12 8v13M5 12v9h14v-9M12 8H8a2.5 2.5 0 1 1 0-5c2 0 4 5 4 5zm0 0h4a2.5 2.5 0 1 0 0-5c-2 0-4 5-4 5z"/></svg></span><span class="tx"><b>Free chapter</b><span>Read the start for free</span></span><span class="pill">Free</span></a>
-<div class="card book">
-  <div class="bk-top"><span class="ci bk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 21.5A2.5 2.5 0 0 1 6.5 19H20v3H6.5"/></svg></span><span class="tx"><b>Read Anyone Instantly</b><span>Get the book · choose your format</span></span></div>
-  <div class="fmts">
-    <a href="https://legendchil.gumroad.com/l/readanyone"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0Zm-.007 5.12c4.48 0 5.995 3.025 6.064 4.744h-3.239c-.069-.962-.897-2.406-2.896-2.406-2.136 0-3.514 1.857-3.514 4.126 0 2.27 1.378 4.125 3.514 4.125 1.93 0 2.758-1.512 3.103-3.025h-3.103v-1.238h6.509v6.327h-2.855v-3.989c-.207 1.444-1.102 4.264-4.617 4.264-3.516 0-5.584-2.82-5.584-6.326 0-3.645 2.276-6.602 6.618-6.602z"/></svg>Digital</a>
-    <a href="https://www.amazon.com/dp/B0HPWRTBJF/"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.617 17.617 0 01-10.951-.577 17.88 17.88 0 01-5.43-3.35c-.1-.074-.151-.15-.151-.22 0-.047.021-.09.051-.13zm6.565-6.218c0-1.005.247-1.863.743-2.577.495-.71 1.17-1.25 2.04-1.615.796-.335 1.756-.575 2.912-.72.39-.046 1.033-.103 1.92-.174v-.37c0-.93-.105-1.558-.3-1.875-.302-.43-.78-.65-1.44-.65h-.182c-.48.046-.896.196-1.246.46-.35.27-.575.63-.675 1.096-.06.3-.206.465-.435.51l-2.52-.315c-.248-.06-.372-.18-.372-.39 0-.046.007-.09.022-.15.247-1.29.855-2.25 1.82-2.88.976-.616 2.1-.975 3.39-1.05h.54c1.65 0 2.957.434 3.888 1.29.135.15.27.3.405.48.12.165.224.314.283.45.075.134.15.33.195.57.06.254.105.42.135.51.03.104.062.3.076.615.01.313.02.493.02.553v5.28c0 .376.06.72.165 1.036.105.313.21.54.315.674l.51.674c.09.136.136.256.136.36 0 .12-.06.226-.18.314-1.2 1.05-1.86 1.62-1.963 1.71-.165.135-.375.15-.63.045a6.062 6.062 0 01-.526-.496l-.31-.347a9.391 9.391 0 01-.317-.42l-.3-.435c-.81.886-1.603 1.44-2.4 1.665-.494.15-1.093.227-1.83.227-1.11 0-2.04-.343-2.76-1.034-.72-.69-1.08-1.665-1.08-2.94l-.05-.076zm3.753-.438c0 .566.14 1.02.425 1.364.285.34.675.512 1.155.512.045 0 .106-.007.195-.02.09-.016.134-.023.166-.023.614-.16 1.08-.553 1.424-1.178.165-.28.285-.58.36-.91.09-.32.12-.59.135-.8.015-.195.015-.54.015-1.005v-.54c-.84 0-1.484.06-1.92.18-1.275.36-1.92 1.17-1.92 2.43l-.035-.02zm9.162 7.027c.03-.06.075-.11.132-.17.362-.243.714-.41 1.05-.5a8.094 8.094 0 011.612-.24c.14-.012.28 0 .41.03.65.06 1.05.168 1.172.33.063.09.099.228.099.39v.15c0 .51-.149 1.11-.424 1.8-.278.69-.664 1.248-1.156 1.68-.073.06-.14.09-.197.09-.03 0-.06 0-.09-.012-.09-.044-.107-.12-.064-.24.54-1.26.806-2.143.806-2.64 0-.15-.03-.27-.087-.344-.145-.166-.55-.257-1.224-.257-.243 0-.533.016-.87.046-.363.045-.7.09-1 .135-.09 0-.148-.014-.18-.044-.03-.03-.036-.047-.02-.077 0-.017.006-.03.02-.063v-.06z"/></svg>Paperback</a>
-    <a href="https://www.amazon.com/dp/B0HPWB14Q9/"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.617 17.617 0 01-10.951-.577 17.88 17.88 0 01-5.43-3.35c-.1-.074-.151-.15-.151-.22 0-.047.021-.09.051-.13zm6.565-6.218c0-1.005.247-1.863.743-2.577.495-.71 1.17-1.25 2.04-1.615.796-.335 1.756-.575 2.912-.72.39-.046 1.033-.103 1.92-.174v-.37c0-.93-.105-1.558-.3-1.875-.302-.43-.78-.65-1.44-.65h-.182c-.48.046-.896.196-1.246.46-.35.27-.575.63-.675 1.096-.06.3-.206.465-.435.51l-2.52-.315c-.248-.06-.372-.18-.372-.39 0-.046.007-.09.022-.15.247-1.29.855-2.25 1.82-2.88.976-.616 2.1-.975 3.39-1.05h.54c1.65 0 2.957.434 3.888 1.29.135.15.27.3.405.48.12.165.224.314.283.45.075.134.15.33.195.57.06.254.105.42.135.51.03.104.062.3.076.615.01.313.02.493.02.553v5.28c0 .376.06.72.165 1.036.105.313.21.54.315.674l.51.674c.09.136.136.256.136.36 0 .12-.06.226-.18.314-1.2 1.05-1.86 1.62-1.963 1.71-.165.135-.375.15-.63.045a6.062 6.062 0 01-.526-.496l-.31-.347a9.391 9.391 0 01-.317-.42l-.3-.435c-.81.886-1.603 1.44-2.4 1.665-.494.15-1.093.227-1.83.227-1.11 0-2.04-.343-2.76-1.034-.72-.69-1.08-1.665-1.08-2.94l-.05-.076zm3.753-.438c0 .566.14 1.02.425 1.364.285.34.675.512 1.155.512.045 0 .106-.007.195-.02.09-.016.134-.023.166-.023.614-.16 1.08-.553 1.424-1.178.165-.28.285-.58.36-.91.09-.32.12-.59.135-.8.015-.195.015-.54.015-1.005v-.54c-.84 0-1.484.06-1.92.18-1.275.36-1.92 1.17-1.92 2.43l-.035-.02zm9.162 7.027c.03-.06.075-.11.132-.17.362-.243.714-.41 1.05-.5a8.094 8.094 0 011.612-.24c.14-.012.28 0 .41.03.65.06 1.05.168 1.172.33.063.09.099.228.099.39v.15c0 .51-.149 1.11-.424 1.8-.278.69-.664 1.248-1.156 1.68-.073.06-.14.09-.197.09-.03 0-.06 0-.09-.012-.09-.044-.107-.12-.064-.24.54-1.26.806-2.143.806-2.64 0-.15-.03-.27-.087-.344-.145-.166-.55-.257-1.224-.257-.243 0-.533.016-.87.046-.363.045-.7.09-1 .135-.09 0-.148-.014-.18-.044-.03-.03-.036-.047-.02-.077 0-.017.006-.03.02-.063v-.06z"/></svg>Kindle</a>
+<div class="top">
+  <img class="capa" src="cover.jpg" alt="Read Anyone Instantly book cover" width="540" height="767">
+  <div class="kick">The Legendchil book</div>
+  <h1>Read Anyone <span>Instantly</span></h1>
+  <p class="sub">Read people before they read you. Micro-signals, body language and the tactics manipulators use, explained plainly.</p>
+  <div class="chips"><span>26 chapters</span><span>25 real cases</span><span>50 signs on one page</span><span>Bonus: 15 red flags</span></div>
+
+  <a class="buy" href="https://legendchil.gumroad.com/l/readanyone">
+    <b>Get the ebook · $9.99</b>
+    <small>Delivered to your inbox instantly · PDF</small>
+  </a>
+  <ul class="inc">
+    <li>The complete book, all 26 chapters</li>
+    <li>Bonus: pocket cheat sheet and 15 red flags</li>
+    <li>Read it on your phone, tablet or computer</li>
+  </ul>
+
+  <a class="freebox" href="https://legendchil.gumroad.com/l/free-preview">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4"/><path d="M12 8v13M5 12v9h14v-9M12 8H8a2.5 2.5 0 1 1 0-5c2 0 4 5 4 5zm0 0h4a2.5 2.5 0 1 0 0-5c-2 0-4 5-4 5z"/></svg>
+    <span><b>Not sure yet? Read chapter 1 free</b><span>Free PDF, straight to your email</span></span>
+  </a>
+
+  <p class="alt-t">Prefer Amazon?</p>
+  <div class="alt">
+    <a href="https://www.amazon.com/dp/B0HPWRTBJF/">Paperback<small>Amazon</small></a>
+    <a href="https://www.amazon.com/dp/B0HPWB14Q9/">Kindle<small>Amazon</small></a>
   </div>
 </div>
+
+<section>
+  <p class="quote">"How did I not see it?" You did. You just didn't know what you were looking at.</p>
+  <p class="sub" style="margin:18px 0 0;text-align:left">Every chapter opens with a real case (Elizabeth Holmes, the Tinder Swindler, Bernie Madoff) and ties each idea to the study behind it. And there's a mystery running through the book: someone manipulates Inês for a whole year. You find out who at the end.</p>
 </section>
 
-<p class="note">Some links may be affiliate links: you pay nothing extra and it helps the channel.</p>
-<p class="legal">Content for education and entertainment only. It is not psychological, medical or legal advice, and results vary from person to person.</p>
+<section>
+  <h2>What you'll learn</h2>
+  <div class="card"><span class="n">PART I · READ</span><b>Face, body, voice and messages</b><p>Each person's baseline, micro-signals, what the hands and feet give away, and how to read a room in 60 seconds.</p></div>
+  <div class="card"><span class="n">PART II · THE PREDATORS</span><b>The tactics of people who want to use you</b><p>Love bombing, isolation, gaslighting, triangulation, the silent treatment and the comeback. And why they pick you.</p></div>
+  <div class="card"><span class="n">PART III · POWER</span><b>Influence in everyday life</b><p>The six triggers of influence, manipulation at work and in the family, and the signs of real and fake interest.</p></div>
+  <div class="card"><span class="n">PART IV · DEFENSE</span><b>What to say and do</b><p>Ready-made lines for every tactic, boundaries you don't negotiate, and a checklist of 50 signs on a single page.</p></div>
+</section>
+
+<section class="depo-inline">
+  <h2>What free chapter readers say</h2>
+  <p class="quote">"The signs are almost like a YouTube tutorial. They seem obvious, yet you see them in almost everyone. I found it fascinating that you can see all of this and wrote a book about it."</p>
+  <p class="who">Rodrigo F. · free chapter reader · translated from Portuguese</p>
+</section>
+
+<section>
+  <h2>Who wrote it</h2>
+  <div class="autor">
+    <img src="/avatar.jpg" alt="Rui Costa, Legendchil" width="64" height="64">
+    <p><b>Rui Costa · Legendchil</b>Every day I break down one psychology signal on TikTok and YouTube. This book puts it all together in one method.</p>
+  </div>
+</section>
+
+<div class="fim">
+  <h2>Start reading the person in front of you today</h2>
+  <a class="buy" href="https://legendchil.gumroad.com/l/readanyone">
+    <b>Get it for $9.99</b>
+    <small>PDF + bonus · secure checkout on Gumroad</small>
+  </a>
+  <a class="free" href="https://legendchil.gumroad.com/l/free-preview">Still not sure? Read chapter 1 for free</a>
 </div>
+
+<footer>
+  <p>Some links may be affiliate links: you pay nothing extra and it helps the channel.</p>
+  <p>Content for education and entertainment only. It is not psychological, medical or legal advice, and results vary from person to person.</p>
+  <p>© Legendchil</p>
+</footer>
+</main>
 </body>
 </html>
